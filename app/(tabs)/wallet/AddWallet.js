@@ -3,15 +3,15 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 
-export default function Detail() {
+export default function AddWallet() {
   return (
     <>
-      <Stack.Screen options={{headerShown: true, headerTitle: "Transactions Detail"}} />
+      <Stack.Screen options={{headerShown: true, headerTitle: "Add Wallet"}} />
       <View style={styles.container}>
-        <Text>Detail transaction history</Text>
+        <Text>Add Wallet</Text>
         <StatusBar style="auto" />
-        <Link href={"/home"}>
-          <Text>Go back to home</Text>
+        <Link href={"/wallet"}>
+          <Text>Go back to wallet</Text>
         </Link>
       </View>
     </>
