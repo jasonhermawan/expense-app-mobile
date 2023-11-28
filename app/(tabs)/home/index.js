@@ -49,9 +49,6 @@ export default function Home() {
     getExpense()
   }, [])
 
-  console.log("income", income)
-  console.log("expense", expense)
-
   const printHistoryTransaction = () => {
     return transactions.map((val) => {
       return (
@@ -74,7 +71,7 @@ export default function Home() {
           style={styles.fixedAdd}
         >
           <Link href="/home/AddTransaction">
-            <View >
+            <View>
               <Text
                 style={{
                   color: "white",
